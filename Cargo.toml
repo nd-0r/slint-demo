@@ -1,0 +1,15 @@
+[package]
+name = "memory"
+version = "0.1.0"
+authors = ["Andrew Orals <nd-0r@andreworals.com>"]
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+rand = "0.8"
+# slint = { path = "../slint/api/rs/slint", default-features = false, features = ["backend-winit", "renderer-default", "compat-1-2"] }
+slint = { version = "1.6", default-features = false, features = ["backend-qt", "renderer-femtovg", "compat-1-2"] }
+
+[build-dependencies]
+slint-build = "1.6"
+
