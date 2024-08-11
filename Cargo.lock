@@ -846,6 +846,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "function-timer"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bbb4e7ad209e434ad3fa9600ebea7f7ff30fbf83ed5bc7bfe2c812b4b1fb5628"
+dependencies = [
+ "function-timer-macro",
+ "metrics",
+]
+
+[[package]]
+name = "function-timer-macro"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c1fce0df6963c0153ce7d1ccca3d4bd8d7085575b6fed0316914d4ec18161480"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "gbm"
 version = "0.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1589,6 +1610,7 @@ dependencies = [
 name = "memory"
 version = "0.1.0"
 dependencies = [
+ "function-timer",
  "rand",
  "slint",
  "slint-build",
@@ -1607,6 +1629,16 @@ dependencies = [
  "log",
  "objc",
  "paste",
+]
+
+[[package]]
+name = "metrics"
+version = "0.23.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "884adb57038347dfbaf2d5065887b6cf4312330dc8e94bc30a1a839bd79d3261"
+dependencies = [
+ "ahash",
+ "portable-atomic",
 ]
 
 [[package]]

@@ -7,7 +7,8 @@ build = "build.rs"
 
 [dependencies]
 rand = "0.8"
-# slint = { path = "../slint/api/rs/slint", default-features = false, features = ["backend-winit", "renderer-default", "compat-1-2"] }
+function-timer = "0.8.0"
+# slint = { path = "/home/andreworals/dev/slint/api/rs/slint", default-features = false, features = ["backend-linuxkms-noseat", "renderer-skia", "compat-1-2"] }
 slint = { version = "1.6", default-features = false, features = ["backend-linuxkms-noseat", "renderer-skia", "compat-1-2"] }
 
 [build-dependencies]
