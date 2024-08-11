@@ -8,6 +8,7 @@ build = "build.rs"
 [dependencies]
 rand = "0.8"
 function-timer = "0.8.0"
+metrics-exporter-prometheus = "0.15.3"
 # slint = { path = "/home/andreworals/dev/slint/api/rs/slint", default-features = false, features = ["backend-linuxkms-noseat", "renderer-skia", "compat-1-2"] }
 slint = { version = "1.6", default-features = false, features = ["backend-linuxkms-noseat", "renderer-skia", "compat-1-2"] }
 
