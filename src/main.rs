@@ -19,8 +19,10 @@ fn main() {
 
     let main_window_weak = main_window.as_weak();
     main_window.on_check_if_pair_solved(move || {
-        let mut flipped_tiles =
-            tiles_model.iter().enumerate().filter(|(_, tile)| tile.image_visible && !tile.solved);
+        let mut flipped_tiles = tiles_model
+            .iter()
+            .enumerate()
+            .filter(|(_, tile)| tile.image_visible && !tile.solved);
 
         if let (Some((t1_idx, mut t1)), Some((t2_idx, mut t2))) =
             (flipped_tiles.next(), flipped_tiles.next())
@@ -63,7 +65,7 @@ slint::slint! {
 
         height: 64px;
         width: 64px;
-        background: solved ? #34CE57 : #3960D5;
+        background: solved ? #000000 : #00FF00;
         animate background { duration: 800ms; }
 
         Image {
